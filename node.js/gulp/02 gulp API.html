@@ -1,0 +1,771 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>02 gulp API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03 实现自动更新.html" />
+    
+    
+    <link rel="prev" href="01 gulp安装.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01 gulp安装.html">
+            
+                <a href="01 gulp安装.html">
+            
+                    
+                    gulp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01 gulp安装.html">
+            
+                <a href="01 gulp安装.html">
+            
+                    
+                    01 gulp安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="02 gulp API.html">
+            
+                <a href="02 gulp API.html">
+            
+                    
+                    02 gulp API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03 实现自动更新.html">
+            
+                <a href="03 实现自动更新.html">
+            
+                    
+                    03 实现自动更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="04 实现自动监视.html">
+            
+                <a href="04 实现自动监视.html">
+            
+                    
+                    04 实现自动监视
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="05 实现开启服务器.html">
+            
+                <a href="05 实现开启服务器.html">
+            
+                    
+                    05 实现开启服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="06 实现监控更新服务器.html">
+            
+                <a href="06 实现监控更新服务器.html">
+            
+                    
+                    06 实现监控更新服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="07 文件合并压缩改名.html">
+            
+                <a href="07 文件合并压缩改名.html">
+            
+                    
+                    07 文件合并压缩改名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="08 sass的配置.html">
+            
+                <a href="08 sass的配置.html">
+            
+                    
+                    08 sass的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="09 gulpfile.js.html">
+            
+                <a href="09 gulpfile.js.html">
+            
+                    
+                    09 gulpfile.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../node/01 Node.js搭建.html">
+            
+                <a href="../node/01 Node.js搭建.html">
+            
+                    
+                    node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../node/01 Node.js搭建.html">
+            
+                <a href="../node/01 Node.js搭建.html">
+            
+                    
+                    01 Node.js搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../node/02 搭建一个服务器.html">
+            
+                <a href="../node/02 搭建一个服务器.html">
+            
+                    
+                    02 搭建一个服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../node/03 http模块.html">
+            
+                <a href="../node/03 http模块.html">
+            
+                    
+                    03 http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../node/04 fs模块.html">
+            
+                <a href="../node/04 fs模块.html">
+            
+                    
+                    04 fs模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../node/05 url模块.html">
+            
+                <a href="../node/05 url模块.html">
+            
+                    
+                    05 url模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../node/06 node处理ajax.html">
+            
+                <a href="../node/06 node处理ajax.html">
+            
+                    
+                    06 node处理ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../nrm/">
+            
+                <a href="../nrm/">
+            
+                    
+                    nrm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >02 gulp API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="api">API</h1>
+<h2 id="src">src()</h2>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6D41;&#xFF0C;&#x7528;&#x4E8E;&#x4ECE;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BFB;&#x53D6; <a href="https://www.gulpjs.com.cn/docs/api/concepts#vinyl" target="_blank">Vinyl</a> &#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x6CE8;&#xFF1A;</strong>BOMs(&#x5B57;&#x8282;&#x987A;&#x5E8F;&#x6807;&#x8BB0;)&#x5728; UTF-8 &#x4E2D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4F5C;&#x7528;&#xFF0C;&#x9664;&#x975E;&#x4F7F;&#x7528; <code>removeBOM</code> &#x9009;&#x9879;&#x7981;&#x7528;&#xFF0C;&#x5426;&#x5219; <code>src()</code> &#x5C06;&#x4ECE;&#x8BFB;&#x53D6;&#x7684; UTF-8 &#x6587;&#x4EF6;&#x4E2D;&#x5220;&#x9664;BOMs&#x3002;</p>
+<h3 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h3>
+<pre><code class="lang-JS"><span class="hljs-keyword">const</span> { src, dest } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">copy</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> src(<span class="hljs-string">&apos;input/*.js&apos;</span>)
+    .pipe(dest(<span class="hljs-string">&apos;output/&apos;</span>));
+}
+
+exports.copy = copy;
+</code></pre>
+<h3 id="&#x51FD;&#x6570;&#x539F;&#x578B;">&#x51FD;&#x6570;&#x539F;&#x578B;</h3>
+<pre><code class="lang-JS">src(globs, [options])
+</code></pre>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>globs</td>
+<td>string array</td>
+<td><a href="https://www.gulpjs.com.cn/docs/api/concepts#globs" target="_blank">Globs</a> to watch on the file system.</td>
+</tr>
+<tr>
+<td>options</td>
+<td>object</td>
+<td>&#x5728;&#x4E0B;&#x9762;&#x7684;<a href="https://www.gulpjs.com.cn/docs/api/src/#options" target="_blank">&#x9009;&#x9879;</a>&#x4E2D;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x591A;&#x79CD;&#x8DEF;&#x5F84;&#x7684;&#x6307;&#x4EE4;">&#x591A;&#x79CD;&#x8DEF;&#x5F84;&#x7684;&#x6307;&#x4EE4;</h3>
+<ol>
+<li><p>&#x9009;&#x4E2D;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x6587;&#x4EF6;,&#x4E0D;&#x5305;&#x542B;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x7684;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">indexFn</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src([<span class="hljs-string">&quot;src/*&quot;</span>]).pipe(gulp.dest(<span class="hljs-string">&quot;server&quot;</span>));
+}
+</code></pre>
+</li>
+<li><p>&#x9009;&#x4E2D;&#x6587;&#x4EF6;&#x5939;&#x5185;<strong>&#x6240;&#x6709;&#x6587;&#x4EF6;</strong>(&#x5305;&#x542B;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x7684;&#x6587;&#x4EF6;)</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">indexFn</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src([<span class="hljs-string">&quot;src/**/*&quot;</span>]).pipe(gulp.dest(<span class="hljs-string">&quot;server&quot;</span>));
+}
+</code></pre>
+</li>
+<li><p>&#x9009;&#x4E2D;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x6240;&#x6709;&#x6307;&#x5B9A;&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">indexFn</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src([<span class="hljs-string">&quot;src/*.html&quot;</span>]).pipe(gulp.dest(<span class="hljs-string">&quot;server&quot;</span>));
+}
+</code></pre>
+</li>
+<li><p>&#x9009;&#x4E2D;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x6240;&#x6709;&#x6307;&#x5B9A;&#x4E86;<strong>&#x67D0;&#x51E0;&#x4E2A;&#x540E;&#x7F00;&#x540D;</strong>&#x7684;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">indexFn</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src([<span class="hljs-string">&quot;src/*.{html,css}&quot;</span>]).pipe(gulp.dest(<span class="hljs-string">&quot;server&quot;</span>));
+}
+</code></pre>
+</li>
+<li><p>&#x9009;&#x4E2D;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x6240;&#x6709;&#x6587;&#x4EF6;<strong>&#x9664;&#x4E86;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">indexFn</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> gulp.src([<span class="hljs-string">&quot;src/**/**&quot;</span>,<span class="hljs-string">&quot;!src/pass.txt&quot;</span>]).pipe(gulp.dest(<span class="hljs-string">&quot;server&quot;</span>));
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5728;&#x7BA1;&#x9053;&#x7684;&#x5F00;&#x59CB;&#x6216;&#x4E2D;&#x95F4;&#x4F7F;&#x7528;&#x7684;&#x6D41;&#xFF0C;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684; globs &#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;">&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;</h3>
+<p>&#x5F53; <code>globs</code> &#x53C2;&#x6570;&#x53EA;&#x80FD;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;(&#x5982; <code>foo/bar.js</code>)&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5339;&#x914D;&#x65F6;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x63D0;&#x793A; &quot;File not found with singular glob&quot;&#x3002;&#x82E5;&#x8981;&#x6291;&#x5236;&#x6B64;&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x5C06; <code>allowEmpty</code> &#x9009;&#x9879;&#x8BBE;&#x7F6E;&#x4E3A; <code>true</code>&#x3002;</p>
+<p>&#x5F53;&#x5728; <code>globs</code> &#x4E2D;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x65E0;&#x6548;&#x7684; glob &#x65F6;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x663E;&#x793A; &quot;Invalid glob argument&quot;&#x3002;</p>
+<h2 id="dest">dest()</h2>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5C06; <a href="https://www.gulpjs.com.cn/docs/api/concepts#vinyl" target="_blank">Vinyl</a> &#x5BF9;&#x8C61;&#x5199;&#x5165;&#x5230;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x6D41;&#x3002;</p>
+<h3 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h3>
+<pre><code class="lang-JS"><span class="hljs-keyword">const</span> { src, dest } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">copy</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> src(<span class="hljs-string">&apos;input/*.js&apos;</span>)
+    .pipe(dest(<span class="hljs-string">&apos;output/&apos;</span>));
+}
+
+exports.copy = copy;
+</code></pre>
+<h3 id="&#x51FD;&#x6570;&#x539F;&#x578B;">&#x51FD;&#x6570;&#x539F;&#x578B;</h3>
+<pre><code class="lang-JS">dest(directory, [options])
+</code></pre>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory <strong>(required)</strong></td>
+<td>string function</td>
+<td>&#x5C06;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x51FA;&#x76EE;&#x5F55;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5C06;&#x4E0E;&#x6BCF;&#x4E2A; Vinyl &#x5BF9;&#x8C61;&#x4E00;&#x8D77;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x3002;</td>
+</tr>
+<tr>
+<td>options</td>
+<td>object</td>
+<td>&#x8BE6;&#x60C5;&#x89C1;&#x4E0B;&#x6587;<a href="https://www.gulpjs.com.cn/docs/api/dest/#%E9%80%89%E9%A1%B9" target="_blank">&#x9009;&#x9879;</a>&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5728;&#x7BA1;&#x9053;&#x7684;&#x4E2D;&#x95F4;&#x6216;&#x672B;&#x5C3E;&#x4F7F;&#x7528;&#x7684;&#x6D41;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0A;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x6BCF;&#x5F53; Vinyl &#x5BF9;&#x8C61;&#x901A;&#x8FC7;&#x6D41;&#x88AB;&#x4F20;&#x9012;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x5185;&#x5BB9;&#x548C;&#x5176;&#x4ED6;&#x7EC6;&#x8282;&#x5199;&#x5230;&#x7ED9;&#x5B9A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x5982;&#x679C; Vinyl &#x5BF9;&#x8C61;&#x5177;&#x6709; <code>symlink</code> &#x5C5E;&#x6027;&#xFF0C;&#x5C06;&#x521B;&#x5EFA;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF08;symbolic link&#xFF09;&#x800C;&#x4E0D;&#x662F;&#x5199;&#x5165;&#x5185;&#x5BB9;&#x3002;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x5C06;<a href="https://www.gulpjs.com.cn/docs/api/dest/#metadata-updates" target="_blank">&#x66F4;&#x65B0;&#x5176;&#x5143;&#x6570;&#x636E;</a>&#x4EE5;&#x5339;&#x914D; Vinyl &#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5728;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0A;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;Vinyl &#x5BF9;&#x8C61;&#x5C06;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
+<ul>
+<li><code>cwd</code>&#x3001;<code>base</code> &#x548C; <code>path</code> &#x5C5E;&#x6027;&#x5C06;&#x88AB;&#x66F4;&#x65B0;&#x4EE5;&#x5339;&#x914D;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li><code>stat</code> &#x5C5E;&#x6027;&#x5C06;&#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x4EE5;&#x5339;&#x914D;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x5982;&#x679C; <code>contents</code> &#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;&#x6D41;&#xFF0C;&#x5B83;&#x5C06;&#x88AB;&#x91CD;&#x7F6E;&#xFF0C;&#x4EE5;&#x4FBF;&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x8BFB;&#x53D6;&#x3002;</li>
+</ul>
+<h3 id="&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;">&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;</h3>
+<p>&#x5F53;&#x76EE;&#x5F55;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5C06;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x63D0;&#x793A; &quot;Invalid dest() folder argument. Please specify a non-empty string or a function.&quot;&#xFF08;&#x65E0;&#x6548;&#x7684; dest() &#x6587;&#x4EF6;&#x5939;&#x53C2;&#x6570;&#x3002;&#x8BF7;&#x6307;&#x5B9A;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x51FD;&#x6570;&#x3002;&#xFF09;</p>
+<p>&#x5F53;&#x76EE;&#x5F55;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5C06;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x63D0;&#x793A; &quot;Invalid dest() folder argument. Please specify a non-empty string or a function.&quot;</p>
+<p>&#x5F53; <code>directory</code> &#x662F;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x6216; <code>undefined</code> &#x7684;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5C06;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x9519;&#x8BEF;&#x6D88;&#x606F; &#x201C;Invalid output folder&#x201D;&#x3002;</p>
+<h2 id="parallel">parallel()</h2>
+<p>&#x5C06;&#x4EFB;&#x52A1;&#x529F;&#x80FD;&#x548C;/&#x6216;&#x7EC4;&#x5408;&#x64CD;&#x4F5C;&#x7EC4;&#x5408;&#x6210;&#x540C;&#x65F6;&#x6267;&#x884C;&#x7684;&#x8F83;&#x5927;&#x64CD;&#x4F5C;&#x3002;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528; <code>series()</code> &#x548C; <code>parallel()</code> &#x8FDB;&#x884C;&#x5D4C;&#x5957;&#x7EC4;&#x5408;&#x7684;&#x6DF1;&#x5EA6;&#x6CA1;&#x6709;&#x5F3A;&#x5236;&#x9650;&#x5236;&#x3002;</p>
+<h3 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h3>
+<pre><code>const { parallel } = require(&apos;gulp&apos;);
+
+function javascript(cb) {
+  // body omitted
+  cb();
+}
+
+function css(cb) {
+  // body omitted
+  cb();
+}
+
+exports.build = parallel(javascript, css);
+</code></pre><h3 id="&#x51FD;&#x6570;&#x539F;&#x578B;">&#x51FD;&#x6570;&#x539F;&#x578B;</h3>
+<pre><code>parallel(...tasks)
+</code></pre><h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x6CE8;&#x89E3;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tasks <strong>(required)</strong></td>
+<td>function string</td>
+<td>&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x4EFB;&#x52A1;&#x51FD;&#x6570;&#x90FD;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x3002;&#x5982;&#x679C;&#x60A8;&#x4EE5;&#x524D;&#x6CE8;&#x518C;&#x8FC7;&#x4EFB;&#x52A1;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F46;&#x4E0D;&#x5EFA;&#x8BAE;&#x8FD9;&#x6837;&#x505A;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h3>
+<p>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7EC4;&#x5408;&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x5C06;&#x6CE8;&#x518C;&#x4E3A;&#x4EFB;&#x52A1;&#x6216;&#x5D4C;&#x5957;&#x5728;&#x5176;&#x4ED6; <code>series</code> &#x548C;/&#x6216; <code>parallel</code> &#x7EC4;&#x5408;&#x4E2D;&#x3002;</p>
+<p>&#x5F53;&#x6267;&#x884C;&#x7EC4;&#x5408;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x5C06;&#x4EE5;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6027;&#x8FD0;&#x884C;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x5176;&#x4ED6;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x4E0D;&#x786E;&#x5B9A;&#x5730;&#x5B8C;&#x6210;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x5B8C;&#x6210;&#x3002;</p>
+<h3 id="&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;">&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;</h3>
+<p>&#x5F53;&#x6CA1;&#x6709;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x4EFB;&#x52A1;&#x65F6;&#xFF0C;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x63D0;&#x793A; &quot;One or more tasks should be combined using series or parallel&quot;&#x3002;&#xFF08;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; series &#x6216; parallel &#x7EC4;&#x5408;&#x7684;&#x4EFB;&#x52A1;&#x201D;&#x3002;&#xFF09;</p>
+<p>&#x5F53;&#x4F20;&#x9012;&#x65E0;&#x6548;&#x7684;&#x4EFB;&#x52A1;&#x6216;&#x672A;&#x6CE8;&#x518C;&#x7684;&#x4EFB;&#x52A1;&#x65F6;&#xFF0C;&#x5C06;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x663E;&#x793A; &quot;Task never defined&quot;&#xFF08;&#x4EFB;&#x52A1;&#x4ECE;&#x672A;&#x5B9A;&#x4E49;&#xFF09;&#x3002;</p>
+<h3 id="&#x5411;&#x524D;&#x5F15;&#x7528;&#xFF08;forward-references&#xFF09;">&#x5411;&#x524D;&#x5F15;&#x7528;&#xFF08;Forward references&#xFF09;</h3>
+<p>&#x5411;&#x524D;&#x5F15;&#x7528;&#x662F;&#x6307;&#x4F7F;&#x7528;&#x5C1A;&#x672A;&#x6CE8;&#x518C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5F15;&#x7528;&#x7EC4;&#x5408;&#x4EFB;&#x52A1;&#x3002;&#x5728;&#x65E7;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x66F4;&#x5FEB;&#x7684;&#x4EFB;&#x52A1;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x548C;&#x4FC3;&#x8FDB;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x51FD;&#x6570;&#xFF0C;&#x5220;&#x9664;&#x4E86;&#x8BE5;&#x7279;&#x6027;&#x3002;</p>
+<p>&#x5728;&#x8F83;&#x65B0;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x5411;&#x524D;&#x5F15;&#x7528;&#xFF0C;&#x5C06;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x6D88;&#x606F;&#x4E3A; &#x201C;Task never defined&#x201D;&#x3002;&#x5F53;&#x60A8;&#x5C1D;&#x8BD5;&#x4E3A;&#x60A8;&#x7684;&#x4EFB;&#x52A1;&#x6CE8;&#x518C;<em>&#x548C;</em>&#x6309;&#x5B57;&#x7B26;&#x4E32;&#x7EC4;&#x5408;&#x4EFB;&#x52A1;&#x4F7F;&#x7528; <code>exports</code> &#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x540D;&#x51FD;&#x6570;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x5728;&#x8FC1;&#x79FB;&#x671F;&#x95F4;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4F7F;&#x7528; <a href="https://github.com/gulpjs/undertaker-forward-reference" target="_blank">forward reference registry</a>&#x3002;&#x8FD9;&#x5C06;&#x4E3A;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x5F15;&#x7528;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x95ED;&#x5305;&#xFF0C;&#x5E76;&#x663E;&#x8457;&#x964D;&#x4F4E;&#x6784;&#x5EFA;&#x901F;&#x5EA6;&#x3002;<strong>&#x4E0D;&#x8981;&#x592A;&#x957F;&#x65F6;&#x95F4;&#x4F9D;&#x8D56;&#x8FD9;&#x4E2A;&#x4FEE;&#x590D;&#x7A0B;&#x5E8F;</strong>&#x3002;</p>
+<h3 id="&#x907F;&#x514D;&#x91CD;&#x590D;&#x4EFB;&#x52A1;">&#x907F;&#x514D;&#x91CD;&#x590D;&#x4EFB;&#x52A1;</h3>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x7EC4;&#x5408;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#xFF08;task&#xFF09;&#x7684;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x5C06;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5728;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x5408;&#x4E2D;&#x5F15;&#x7528;&#x7684; <code>clean</code> &#x4EFB;&#x52A1;&#x5C06;&#x8FD0;&#x884C;&#x4E24;&#x6B21;&#xFF0C;&#x5C06;&#x5BFC;&#x81F4;&#x4E0D;&#x671F;&#x671B;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x6700;&#x7EC8;&#x7684;&#x7EC4;&#x5408;&#x4E2D;&#x6307;&#x5B9A; <code>clean</code> &#x4EFB;&#x52A1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-JS"><span class="hljs-comment">// This is INCORRECT</span>
+<span class="hljs-keyword">const</span> { series, parallel } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp&apos;</span>);
+
+<span class="hljs-keyword">const</span> clean = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// body omitted</span>
+  cb();
+};
+
+<span class="hljs-keyword">const</span> css = series(clean, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// body omitted</span>
+  cb();
+});
+
+<span class="hljs-keyword">const</span> javascript = series(clean, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// body omitted</span>
+  cb();
+});
+
+exports.build = parallel(css, javascript);
+</code></pre>
+<p>&#x53EF;&#x8F6C;&#x6362;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-JS"><span class="hljs-keyword">const</span> { series, parallel } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clean</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// body omitted</span>
+  cb();
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">css</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// body omitted</span>
+  cb();
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">javascript</span>(<span class="hljs-params">cb</span>) </span>{
+  <span class="hljs-comment">// body omitted</span>
+  cb();
+}
+
+exports.build = series(clean, parallel(css, javascript));
+</code></pre>
+<h2 id="watch">watch()</h2>
+<p>&#x76D1;&#x542C; globs &#x5E76;&#x5728;&#x53D1;&#x751F;&#x66F4;&#x6539;&#x65F6;&#x8FD0;&#x884C;&#x4EFB;&#x52A1;&#x3002;&#x4EFB;&#x52A1;&#x4E0E;&#x4EFB;&#x52A1;&#x7CFB;&#x7EDF;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x88AB;&#x7EDF;&#x4E00;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h3>
+<pre><code>const { watch } = require(&apos;gulp&apos;);
+
+watch([&apos;input/*.js&apos;, &apos;!input/something.js&apos;], function(cb) {
+  // body omitted
+  cb();
+});
+</code></pre><h3 id="&#x51FD;&#x6570;&#x539F;&#x578B;">&#x51FD;&#x6570;&#x539F;&#x578B;</h3>
+<pre><code>watch(globs, [options], [task])
+</code></pre><h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>globs <strong>(required)</strong></td>
+<td>string array</td>
+<td><a href="https://www.gulpjs.com.cn/docs/api/concepts#globs" target="_blank">Globs</a> &#x7528;&#x6765;&#x76D1;&#x542C;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</td>
+</tr>
+<tr>
+<td>options</td>
+<td>object</td>
+<td>&#x8BE6;&#x60C5;&#x53C2;&#x89C1;&#x4E0B;&#x6587; <a href="https://www.gulpjs.com.cn/docs/api/watch/#options" target="_blank">&#x9009;&#x9879;</a></td>
+</tr>
+<tr>
+<td>task</td>
+<td>function string</td>
+<td>&#x4E00;&#x4E2A; <a href="https://www.gulpjs.com.cn/docs/api/concepts#tasks" target="_blank">&#x4EFB;&#x52A1;&#x51FD;&#x6570;</a> &#x6216;&#x7531; <code>series()</code> &#x548C; <code>parallel()</code> &#x751F;&#x6210;&#x7684;&#x7EC4;&#x5408;&#x4EFB;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x76D1;&#x89C6;&#x591A;&#x4E2A;&#x6587;&#x4EF6;">&#x76D1;&#x89C6;&#x591A;&#x4E2A;&#x6587;&#x4EF6;</h3>
+<ol>
+<li><p>&#x5BF9;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x76D1;&#x89C6;,&#x5E76;&#x6267;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x591A;&#x4E2A;&#x76D1;&#x542C;&#x7684;&#x6307;&#x4EE4;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;f1&quot;</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f2</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;f2&quot;</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f3</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;f3&quot;</span>)
+}
+
+unction watchAllFn() {
+    gulp.watch([<span class="hljs-string">&quot;src/index.html&quot;</span>], indexFn)
+    gulp.watch([<span class="hljs-string">&quot;src/index.html&quot;</span>], f1)
+    gulp.watch([<span class="hljs-string">&quot;src/index.html&quot;</span>], f2)
+    gulp.watch([<span class="hljs-string">&quot;src/index.html&quot;</span>], f3)
+}
+exports.watchAll = watchAllFn;
+</code></pre>
+</li>
+</ol>
+<ol>
+<li><p>&#x5BF9;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x76D1;&#x89C6;,&#x5E76;&#x6267;&#x884C;&#x51FD;&#x6570;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">watchFn</span>(<span class="hljs-params"></span>) </span>{
+    gulp.watch([<span class="hljs-string">&quot;src/index.html&quot;</span>], indexFn)
+    gulp.watch([<span class="hljs-string">&quot;src/css/index.css&quot;</span>], indexFn)
+    gulp.watch([<span class="hljs-string">&quot;src/css/public.css&quot;</span>], indexFn)
+    gulp.watch([<span class="hljs-string">&quot;src/js/index.js&quot;</span>], indexFn)
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;</h3>
+<p><a href="https://www.gulpjs.com.cn/docs/api/watch/#chokidar-instance" target="_blank">chokidar</a> &#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x76D1;&#x542C;&#x8BBE;&#x7F6E;&#x8FDB;&#x884C;&#x7EC6;&#x7C92;&#x5EA6;&#x63A7;&#x5236;&#x3002;</p>
+<h3 id="&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;">&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x9519;&#x8BEF;</h3>
+<p>&#x5F53;&#x4EE5; <code>globs</code> &#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x975E;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5E26;&#x6709;&#x4EFB;&#x4F55;&#x975E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x5C06;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x63D0;&#x793A; &quot;Non-string provided as watch path&quot;&#x3002;</p>
+<p>&#x5F53;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A; <code>task</code> &#x4F20;&#x9012;&#x65F6;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x63D0;&#x793A; &quot;watch task has to be a function (optionally generated by using gulp.parallel or gulp.series)&quot;&#xFF08; watch &#x4EFB;&#x52A1;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;(&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4F7F;&#x7528; gulp.parallel &#x6216; gulp.series &#x751F;&#x6210;))&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01 gulp安装.html" class="navigation navigation-prev " aria-label="Previous page: 01 gulp安装">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03 实现自动更新.html" class="navigation navigation-next " aria-label="Next page: 03 实现自动更新">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"02 gulp API","level":"1.2.2","depth":2,"next":{"title":"03 实现自动更新","level":"1.2.3","depth":2,"path":"gulp/03 实现自动更新.md","ref":"gulp/03 实现自动更新.md","articles":[]},"previous":{"title":"01 gulp安装","level":"1.2.1","depth":2,"path":"gulp/01 gulp安装.md","ref":"gulp/01 gulp安装.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gulp/02 gulp API.md","mtime":"2020-01-03T03:30:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T06:46:31.100Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

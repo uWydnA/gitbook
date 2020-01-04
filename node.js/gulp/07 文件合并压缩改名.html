@@ -1,0 +1,529 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>07 文件合并压缩改名 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="08 sass的配置.html" />
+    
+    
+    <link rel="prev" href="06 实现监控更新服务器.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01 gulp安装.html">
+            
+                <a href="01 gulp安装.html">
+            
+                    
+                    gulp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01 gulp安装.html">
+            
+                <a href="01 gulp安装.html">
+            
+                    
+                    01 gulp安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="02 gulp API.html">
+            
+                <a href="02 gulp API.html">
+            
+                    
+                    02 gulp API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03 实现自动更新.html">
+            
+                <a href="03 实现自动更新.html">
+            
+                    
+                    03 实现自动更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="04 实现自动监视.html">
+            
+                <a href="04 实现自动监视.html">
+            
+                    
+                    04 实现自动监视
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="05 实现开启服务器.html">
+            
+                <a href="05 实现开启服务器.html">
+            
+                    
+                    05 实现开启服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="06 实现监控更新服务器.html">
+            
+                <a href="06 实现监控更新服务器.html">
+            
+                    
+                    06 实现监控更新服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="07 文件合并压缩改名.html">
+            
+                <a href="07 文件合并压缩改名.html">
+            
+                    
+                    07 文件合并压缩改名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="08 sass的配置.html">
+            
+                <a href="08 sass的配置.html">
+            
+                    
+                    08 sass的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="09 gulpfile.js.html">
+            
+                <a href="09 gulpfile.js.html">
+            
+                    
+                    09 gulpfile.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../node/01 Node.js搭建.html">
+            
+                <a href="../node/01 Node.js搭建.html">
+            
+                    
+                    node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../node/01 Node.js搭建.html">
+            
+                <a href="../node/01 Node.js搭建.html">
+            
+                    
+                    01 Node.js搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../node/02 搭建一个服务器.html">
+            
+                <a href="../node/02 搭建一个服务器.html">
+            
+                    
+                    02 搭建一个服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../node/03 http模块.html">
+            
+                <a href="../node/03 http模块.html">
+            
+                    
+                    03 http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../node/04 fs模块.html">
+            
+                <a href="../node/04 fs模块.html">
+            
+                    
+                    04 fs模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../node/05 url模块.html">
+            
+                <a href="../node/05 url模块.html">
+            
+                    
+                    05 url模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../node/06 node处理ajax.html">
+            
+                <a href="../node/06 node处理ajax.html">
+            
+                    
+                    06 node处理ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../nrm/">
+            
+                <a href="../nrm/">
+            
+                    
+                    nrm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >07 文件合并压缩改名</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x4EF6;&#x5408;&#x5E76;&#x538B;&#x7F29;&#x6539;&#x540D;">&#x6587;&#x4EF6;&#x5408;&#x5E76;&#x538B;&#x7F29;&#x6539;&#x540D;</h1>
+<h2 id="gulp-uglify">gulp-uglify</h2>
+<p><a href="https://travis-ci.org/terinjokes/gulp-uglify" target="_blank"><img src="https://img.shields.io/travis/terinjokes/gulp-uglify/master.svg?label=Travis%20CI&amp;style=flat-square" alt="img"></a>
+<a href="https://ci.appveyor.com/project/terinjokes/gulp-uglify" target="_blank"><img src="https://img.shields.io/appveyor/ci/terinjokes/gulp-uglify/master.svg?label=AppVeyor&amp;style=flat-square" alt="img"></a>
+<a href="https://yarnpkg.com/en/package/gulp-uglify" target="_blank"><img src="https://img.shields.io/npm/dm/gulp-uglify.svg?style=flat-square" alt="img"></a>
+<a href="https://yarnpkg.com/en/package/gulp-uglify" target="_blank"><img src="https://img.shields.io/npm/v/gulp-uglify.svg?style=flat-square" alt="img"></a>
+<a href="https://coveralls.io/github/terinjokes/gulp-uglify" target="_blank"><img src="https://img.shields.io/coveralls/terinjokes/gulp-uglify/master.svg?style=flat-square" alt="img"></a></p>
+<blockquote>
+<p>Minify JavaScript with UglifyJS3.</p>
+<p>gulp-uglify&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;: <a href="https://www.npmjs.com/package/gulp-uglify" target="_blank">gulp-uglify</a> </p>
+</blockquote>
+<h2 id="gulp-babel">gulp-babel</h2>
+<p><a href="https://www.npmjs.com/package/gulp-babel" target="_blank"><img src="https://img.shields.io/npm/v/gulp-babel.svg?maxAge=2592000" alt="npm"></a>
+<a href="https://travis-ci.org/babel/gulp-babel" target="_blank"><img src="https://travis-ci.org/babel/gulp-babel.svg?branch=master" alt="Build Status"></a></p>
+<blockquote>
+<p>Use next generation JavaScript, today, with <a href="https://babeljs.io/" target="_blank">Babel</a></p>
+<p>gulp-babel&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;: <a href="https://www.npmjs.com/package/gulp-babel" target="_blank">gulp-babel</a> </p>
+</blockquote>
+<p>gulp&#x4E0D;&#x80FD;&#x5B9E;&#x73B0;ES6&#x8F6C;ES5</p>
+<p>babel&#x662F;js&#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x5C06;ES5+&#x7684;&#x7248;&#x672C;&#xFF0C;&#x8F6C;&#x6210;&#x4F4E;&#x7248;&#x672C;&#x7684;ES&#x8BED;&#x6CD5;</p>
+<ol>
+<li>&#x5148;&#x62FF;&#x5230;babel&#x5BF9;gulp&#x7684;&#x652F;&#x6301;&#xFF1A;gulp-babel&#x7684;&#x63D2;&#x4EF6;</li>
+<li>&#x62FF;&#x5230;babel&#x81EA;&#x8EAB;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x548C;ES6&#x8F6C;ES5&#x7684;&#x63D2;&#x4EF6;<ul>
+<li>@babel/core</li>
+<li>@babel/preset-env:ES6&#x8F6C;ES5</li>
+</ul>
+</li>
+</ol>
+<h2 id="gulp-concat">gulp-concat</h2>
+<blockquote>
+<p>&#x5408;&#x5E76;&#x6587;&#x4EF6;</p>
+</blockquote>
+<h2 id="&#x5F15;&#x5165;&#x6A21;&#x5757;">&#x5F15;&#x5165;&#x6A21;&#x5757;</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp&quot;</span>);
+<span class="hljs-keyword">const</span> uglify = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp-uglify&quot;</span>);
+<span class="hljs-keyword">const</span> babel = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp-babel&quot;</span>);
+<span class="hljs-keyword">const</span> concat = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;gulp-concat&quot;</span>);
+</code></pre>
+<h2 id="&#x58F0;&#x660E;&#x5E76;&#x5B9A;&#x4E49;&#x5408;&#x5E76;&#x538B;&#x7F29;&#x6539;&#x540D;&#x7684;&#x51FD;&#x6570;">&#x58F0;&#x660E;&#x5E76;&#x5B9A;&#x4E49;&#x5408;&#x5E76;,&#x538B;&#x7F29;,&#x6539;&#x540D;&#x7684;&#x51FD;&#x6570;</h2>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hygFn</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">&quot;src/js/*.js&quot;</span>) <span class="hljs-comment">//&#x627E;&#x6587;&#x4EF6;</span>
+        .pipe(babel({
+        presets: [<span class="hljs-string">&apos;@babel/env&apos;</span>] <span class="hljs-comment">//ES6&#x8F6C;ES5</span>
+    }))
+        .pipe(concat(<span class="hljs-string">&quot;index.js&quot;</span>)) <span class="hljs-comment">//&#x5408;&#x5E76;&#xFF0C;&#x5E76;&#x8D77;&#x540D;</span>
+        .pipe(gulp.dest(<span class="hljs-string">&quot;server/js&quot;</span>)) <span class="hljs-comment">//&#x8F6C;&#x5B58;&#x5230;</span>
+        .pipe(uglify()) <span class="hljs-comment">//&#x538B;&#x7F29;</span>
+        .pipe(rename(<span class="hljs-string">&quot;index.min.js&quot;</span>)) <span class="hljs-comment">//&#x6539;&#x65B0;&#x540D;&#x5B57;</span>
+        .pipe(gulp.dest(<span class="hljs-string">&quot;server/js&quot;</span>)) <span class="hljs-comment">//&#x8F6C;&#x5B58;&#x5230;</span>
+}
+</code></pre>
+<h2 id="&#x66B4;&#x9732;&#x5165;&#x53E3;">&#x66B4;&#x9732;&#x5165;&#x53E3;</h2>
+<pre><code class="lang-js">exports.hyg = hygFn;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06 实现监控更新服务器.html" class="navigation navigation-prev " aria-label="Previous page: 06 实现监控更新服务器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="08 sass的配置.html" class="navigation navigation-next " aria-label="Next page: 08 sass的配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"07 文件合并压缩改名","level":"1.2.7","depth":2,"next":{"title":"08 sass的配置","level":"1.2.8","depth":2,"path":"gulp/08 sass的配置.md","ref":"gulp/08 sass的配置.md","articles":[]},"previous":{"title":"06 实现监控更新服务器","level":"1.2.6","depth":2,"path":"gulp/06 实现监控更新服务器.md","ref":"gulp/06 实现监控更新服务器.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"gulp/07 文件合并压缩改名.md","mtime":"2020-01-03T05:28:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-04T06:46:31.100Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
